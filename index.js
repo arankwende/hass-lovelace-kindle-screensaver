@@ -110,7 +110,7 @@ const batteryStore = {};
       const lastModifiedTime = new Date(stat.mtime).toUTCString();
 
       response.writeHead(200, {
-        "Content-Type": "image/png",
+        "Content-Type": "image/jpg",
         "Content-Length": Buffer.byteLength(data),
         "Last-Modified": lastModifiedTime
       });
